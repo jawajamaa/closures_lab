@@ -1,10 +1,18 @@
-
-import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [counter, setCounter] = useState(0)
+
+  const handleClick = () => {
+    console.log("I was clicked")
+  }
+ 
+
   return (
-    <div className="App">
-   
+    <div>
+      {counter}
+      <button onClick={handleClick}> Increment Counter </button>
     </div>
   );
 }
