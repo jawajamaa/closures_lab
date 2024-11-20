@@ -6,10 +6,9 @@ function App() {
   const [counter, setCounter] = useState(0)
 
   const handleClick = () => {
-    console.log("I was clicked")
+    setCounter(counter + 1)
   }
  
-
   return (
     <div className='App'>
       <div className='counter'>
