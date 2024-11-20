@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './App.css';
 
 function App() {
 
@@ -10,9 +11,12 @@ function App() {
  
 
   return (
-    <div>
-      {counter}
-      <button onClick={handleClick}> Increment Counter </button>
+    <div className='App'>
+      <div className='counter'>
+        <div></div>
+        {counter}
+      </div>
+      <button onClick={handleClick} className='button'> Increment Counter </button>
     </div>
   );
 }
