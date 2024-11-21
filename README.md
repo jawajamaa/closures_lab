@@ -1,3 +1,19 @@
+## Setup Instructions
+
+- **After forking and cloning the repository:**
+  1. Navigate to the project directory:
+     ```bash
+     cd <project-folder-name>
+     ```
+  2. Install dependencies:
+     ```bash
+     npm install
+     ```
+  3. Start the development server:
+     ```bash
+     npm start
+     ```
+
 # **Closures and State Updates in React**
 Closures can be hard to understand. I remember when I was going through my coding bootcamp and I was introduced to them, I didn't really get what it was they were trying to teach me. Part of the problem was that I wasn’t shown how they can cause issues in our code and how our solutions fix these problems.
 
