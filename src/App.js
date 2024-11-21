@@ -1,21 +1,21 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(0);
 
   const handleClick = () => {
-    setCounter(counter + 1)
-  }
- 
+    setCounter(counter + 1);
+  };
+
   return (
-    <div className='App'>
-      <div className='counter'>
-        <div></div>
+    <div className="App">
+      <div className="counter">
         {counter}
       </div>
-      <button onClick={handleClick} className='button'> Increment Counter </button>
+      <button onClick={handleClick} className="button">
+        Increment Counter
+      </button>
     </div>
   );
 }
