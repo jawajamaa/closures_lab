@@ -5,7 +5,11 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   const handleClick = () => {
-    setCounter(counter + 1);
+    console.log("I was clicked!")
+    setTimeout(() => {
+      console.log("Set timeout ran!")
+      setCounter(prevState => prevState + 1);
+    }, 1000)
   };
 
   return (
